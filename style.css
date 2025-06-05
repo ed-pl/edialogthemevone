@@ -1,0 +1,152 @@
+/*
+Theme Name: Edialog Theme One
+Theme URI: http://www.ed-24.pl/de/
+Author: Marian Smuda
+Author URI: http://www.ed-24.pl/de/
+Description: Simple Wordperss - Bootstrap
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: edialogthhemevone
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html 
+    {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+	font-family: "Roboto", sans-serif;
+    font-style: normal;
+    overflow-x: hidden;
+	background-color: #f4f4f4;
+}
+
+.row { 
+    margin-left: 0; 
+    margin-right: 0;
+}
+
+/*Jumbotron Bereich */
+
+.banner {
+    background-image: url(image/skaliert_dev-1024x683.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center center;
+    background-size: cover;
+}
+
+.banner-heading {
+    margin-top: 150px;
+}
+
+/* Jumbtron Text Background */
+
+.jumbotron-text h3 {
+	background-color: #1b00e242;
+	padding: 15px;
+}
+
+/*
+.jumbotron-text {
+	border:solid 2px #FFD700;
+}
+*/
+
+/* Teitel Background-Color */
+
+.under-color {
+  color: white;
+  /*font-size: 24px;*/
+  
+  /* Main Style for the paragraph effect */
+  display: inline;
+  background: #191c34;
+  padding: 4px;
+  line-height: 1.8;
+}
+
+/* herzlich-willkomen-bereich 
+
+.herzlich-willkomen-bereich {
+	font-family: "Montserrat", sans-serif;
+    font-style: normal;
+}
+
+ */
+
+
+/* card list font icons */
+.posty ul {
+  --icon-space: 1.3em;
+  list-style: none;
+  padding: 0;
+}
+
+.posty li {
+  padding-left: var(--icon-space);
+  font-weight: 300;
+  font-size: large;
+}
+
+.posty li:before {
+  /*content: "\f00c";  FontAwesome Unicode */
+  font-family: FontAwesome;
+ 
+  display: inline-block;
+  margin-left: calc( var(--icon-space) * -1 );
+  width: var(--icon-space);
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("https://ed-24.pl/de/wp-content/uploads/2025/03/datenstrukr-1024-683.jpg");
+	
+	
+    /* Set a specific height */
+	height: 350px;
+	padding-top: 56px;
+
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+/* Section TechStack */
+
+.icons-tech-stack a{
+	
+	color: #949494 !important;
+}
+
+
+/* Footer */
+
+.footer-anschrift p {
+	font-size: 12px;
+}
+
+.profil-img {
+	width:180px;
+	
+
+	
+}
+
+
