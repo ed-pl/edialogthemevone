@@ -12,32 +12,32 @@
 
 <body <?php body_class(); ?>>
 
-	<!-- Navigahtion -->
-	<header>
+<!-- Navigahtion -->
+<header>
 	
-<nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
-     <div class="container">
+    <nav class="navbar navbar-expand-md navbar-light bg-light" role="navigation">
+        <div class="container">
+        <!--Logo einbauen -->
+            <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                <?php 
+                    if (function_exists('the_custom_logo')) {
+                    the_custom_logo();    
+                    } ?>
+            </a>
+
 	  	  
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-<!--Logo einbauen -->
-    <a class="navbar-brand" 
-    href="<?php echo home_url(); ?>">
-    <?php 
-     if (function_exists('the_custom_logo')) {
-        the_custom_logo();    
-     } 
-    ?>
-    </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'your-theme-slug' ); ?>">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+       
     
-<!-- Einbinden der wp_nav_menu_walker -->
+        <!-- Einbinden der wp_nav_menu_walker -->
         
         <?php
         wp_nav_menu( array(
             'theme_location'    => 'primary',
-            'depth'             => 2,
-            'container'         => '',
+            'depth'             => 3,
+            'container'         => 'div',
             'container_class'   => 'collapse navbar-collapse',
             'container_id'      => 'bs-example-navbar-collapse-1',
             'menu_class'        => 'nav navbar-nav',
